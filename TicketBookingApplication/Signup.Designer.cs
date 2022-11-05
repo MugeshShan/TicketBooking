@@ -44,12 +44,14 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 10F);
-            this.button1.Location = new System.Drawing.Point(369, 591);
+            this.button1.Location = new System.Drawing.Point(369, 642);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 37);
             this.button1.TabIndex = 33;
@@ -61,7 +63,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Arial", 9F);
-            this.radioButton2.Location = new System.Drawing.Point(480, 403);
+            this.radioButton2.Location = new System.Drawing.Point(505, 388);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(94, 25);
             this.radioButton2.TabIndex = 32;
@@ -73,7 +75,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Arial", 9F);
-            this.radioButton1.Location = new System.Drawing.Point(369, 403);
+            this.radioButton1.Location = new System.Drawing.Point(369, 388);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(74, 25);
             this.radioButton1.TabIndex = 31;
@@ -83,31 +85,31 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(369, 531);
+            this.maskedTextBox1.Location = new System.Drawing.Point(369, 509);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.PasswordChar = '*';
-            this.maskedTextBox1.Size = new System.Drawing.Size(202, 26);
+            this.maskedTextBox1.Size = new System.Drawing.Size(230, 26);
             this.maskedTextBox1.TabIndex = 29;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(369, 461);
+            this.textBox4.Location = new System.Drawing.Point(372, 442);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 26);
+            this.textBox4.Size = new System.Drawing.Size(227, 26);
             this.textBox4.TabIndex = 28;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(372, 248);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 26);
+            this.textBox2.Size = new System.Drawing.Size(227, 26);
             this.textBox2.TabIndex = 26;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(372, 173);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 26);
+            this.textBox1.Size = new System.Drawing.Size(227, 26);
             this.textBox1.TabIndex = 25;
             // 
             // label7
@@ -125,7 +127,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 10F);
-            this.label6.Location = new System.Drawing.Point(216, 531);
+            this.label6.Location = new System.Drawing.Point(216, 509);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 23);
             this.label6.TabIndex = 23;
@@ -135,7 +137,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10F);
-            this.label5.Location = new System.Drawing.Point(216, 461);
+            this.label5.Location = new System.Drawing.Point(212, 442);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 23);
             this.label5.TabIndex = 22;
@@ -176,7 +178,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(369, 331);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 28);
+            this.comboBox1.Size = new System.Drawing.Size(230, 28);
             this.comboBox1.TabIndex = 34;
             // 
             // label8
@@ -193,15 +195,43 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(372, 94);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(202, 26);
+            this.textBox5.Size = new System.Drawing.Size(227, 26);
             this.textBox5.TabIndex = 36;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Font = new System.Drawing.Font("Arial", 9F);
+            this.checkBox1.Location = new System.Drawing.Point(369, 562);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(113, 25);
+            this.checkBox1.TabIndex = 39;
+            this.checkBox1.Text = "Customer";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Arial", 9F);
+            this.checkBox2.Location = new System.Drawing.Point(488, 562);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(115, 25);
+            this.checkBox2.TabIndex = 40;
+            this.checkBox2.Text = "Employee";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 754);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox1);
@@ -244,5 +274,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }

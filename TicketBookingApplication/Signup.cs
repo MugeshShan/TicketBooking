@@ -71,23 +71,47 @@ namespace TicketBookingApplication
         private void button1_Click(object sender, EventArgs e)
         {
             oleDbConnection.Open();
-            var state = Utility.Utility.Locations.Find(x=>x.StateName == this.comboBox1.Text);
-            string gender;
-            if (this.radioButton1.Checked == true)
+            if (this.checkBox1.Checked)
             {
-                gender = "Male";
+                var state = Utility.Utility.Locations.Find(x => x.StateName == this.comboBox1.Text);
+                string gender;
+                if (this.radioButton1.Checked == true)
+                {
+                    gender = "Male";
+                }
+                else
+                {
+                    gender = "Female";
+                }
+                var command = String.Format("Insert INTO [Customer] ([FirstName], [LastName], [Email], [Gender], [Username], [Password], State_Id) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', {6})", textBox5.Text, textBox1.Text, textBox2.Text, gender, textBox4.Text, maskedTextBox1.Text, state.Id);
+                OleDbCommand command2 = new OleDbCommand(command, oleDbConnection);
+                command2.ExecuteNonQuery();
+                ClearTextBoxes();
+                MessageBox.Show("User Added !!!");
+                Form1 form1 = new Form1();
+                form1.Show();
             }
             else
             {
-                gender = "Female";
+                var state = Utility.Utility.Locations.Find(x => x.StateName == this.comboBox1.Text);
+                string gender;
+                if (this.radioButton1.Checked == true)
+                {
+                    gender = "Male";
+                }
+                else
+                {
+                    gender = "Female";
+                }
+                var command = String.Format("Insert INTO [Employee] ([FirstName], [LastName], [Email], [Gender], [Username], [Password], State_Id) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', {6})", textBox5.Text, textBox1.Text, textBox2.Text, gender, textBox4.Text, maskedTextBox1.Text, state.Id);
+                OleDbCommand command2 = new OleDbCommand(command, oleDbConnection);
+                command2.ExecuteNonQuery();
+                ClearTextBoxes();
+                MessageBox.Show("Employee Added !!!");
+                Form1 form1 = new Form1();
+                form1.Show();
             }
-            var command = String.Format("Insert INTO [Customer] ([FirstName], [LastName], [Email], [Gender], [Username], [Password], State_Id) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', {6})", textBox5.Text, textBox1.Text, textBox2.Text, gender, textBox4.Text, maskedTextBox1.Text, state.Id);
-            OleDbCommand command2 = new OleDbCommand(command, oleDbConnection);
-            command2.ExecuteNonQuery();
-            ClearTextBoxes();
-            MessageBox.Show("User Added !!!");
-            Form1 form1 = new Form1();
-            form1.Show();
+           
         }
 
 
@@ -110,6 +134,16 @@ namespace TicketBookingApplication
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.checkBox1.Checked = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            this.checkBox2.Checked = false;
         }
     }
 }

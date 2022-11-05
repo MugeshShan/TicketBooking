@@ -53,6 +53,12 @@
     <Compile Include="BookingPage.Designer.cs">
       <DependentUpon>BookingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeePage.Designer.cs">
+      <DependentUpon>EmployeePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,7 @@
     </Compile>
     <Compile Include="Models\Crew.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Play.cs" />
     <Compile Include="Program.cs" />
