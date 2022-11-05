@@ -49,7 +49,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 10F);
-            this.button1.Location = new System.Drawing.Point(369, 679);
+            this.button1.Location = new System.Drawing.Point(369, 591);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 37);
             this.button1.TabIndex = 33;
@@ -83,7 +83,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(369, 575);
+            this.maskedTextBox1.Location = new System.Drawing.Point(369, 531);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.PasswordChar = '*';
             this.maskedTextBox1.Size = new System.Drawing.Size(202, 26);
@@ -91,7 +91,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(369, 486);
+            this.textBox4.Location = new System.Drawing.Point(369, 461);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(202, 26);
             this.textBox4.TabIndex = 28;
@@ -125,7 +125,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 10F);
-            this.label6.Location = new System.Drawing.Point(216, 578);
+            this.label6.Location = new System.Drawing.Point(216, 531);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 23);
             this.label6.TabIndex = 23;
@@ -135,7 +135,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10F);
-            this.label5.Location = new System.Drawing.Point(216, 486);
+            this.label5.Location = new System.Drawing.Point(216, 461);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 23);
             this.label5.TabIndex = 22;
