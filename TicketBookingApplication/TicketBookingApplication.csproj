@@ -77,6 +77,12 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="TicketBookingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketBookingPage.Designer.cs">
+      <DependentUpon>TicketBookingPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Utility.cs" />
     <EmbeddedResource Include="BookingPage.resx">
       <DependentUpon>BookingPage.cs</DependentUpon>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketBookingPage.resx">
+      <DependentUpon>TicketBookingPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

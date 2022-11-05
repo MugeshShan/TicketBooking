@@ -103,5 +103,12 @@ namespace TicketBookingApplication
             this.label8.Text = Utility.Utility.Crew.Director;
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TicketBookingPage ticketBookingPage = new TicketBookingPage();
+            ticketBookingPage.Show();
+            this.Close();
+        }
     }
 }
