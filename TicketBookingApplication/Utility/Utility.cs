@@ -10,5 +10,6 @@ namespace TicketBookingApplication.Utility
     public static class Utility
     {
         public static List<Location> Locations = new List<Location>();
+        public static Customer Customer = new Customer();
     }
 }
