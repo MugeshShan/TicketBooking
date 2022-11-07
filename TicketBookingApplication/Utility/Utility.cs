@@ -13,6 +13,7 @@ namespace TicketBookingApplication.Utility
         public static Customer Customer = new Customer();
         public static Crew Crew = new Crew();
         public static Play Play = new Play();
+        public static string ClickedButton = "";
 
     }
 }
