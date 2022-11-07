@@ -109,5 +109,67 @@ namespace TicketBookingApplication
                 this.button5.Hide();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            List<Payment> payments = new List<Payment>();
+            oleDbConnection.Open();
+            var command = "Select * from Payment";
+            OleDbDataAdapter adapter = new OleDbDataAdapter();
+            var command2 = new OleDbCommand(command, oleDbConnection);
+            adapter.SelectCommand = command2;
+            var ds = new DataSet();
+            adapter.Fill(ds);
+            var dt = ds.Tables[0];
+            foreach (DataRow dr in dt.Rows)
+            {
+
+                var tempUser = new Payment
+                {
+                    Id = Convert.ToInt32(dr["Payment_Id"]),
+                    CustomerId = Convert.ToInt32(dr["Customer_Id"]),
+                    Amount = Convert.ToInt32(dr["Amount"]),
+                    PaymentType = dr["Payment_Type"].ToString(),
+                    PaymentDate = dr["Payment_Date"].ToString()
+                };
+                if (tempUser != null)
+                {
+                    payments.Add(tempUser);
+                }
+            }
+            this.dataGridView1.DataSource = payments;
+            oleDbConnection.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            List<Reservation> payments = new List<Reservation>();
+            oleDbConnection.Open();
+            var command = "Select * from Reservation";
+            OleDbDataAdapter adapter = new OleDbDataAdapter();
+            var command2 = new OleDbCommand(command, oleDbConnection);
+            adapter.SelectCommand = command2;
+            var ds = new DataSet();
+            adapter.Fill(ds);
+            var dt = ds.Tables[0];
+            foreach (DataRow dr in dt.Rows)
+            {
+
+                var tempUser = new Reservation
+                {
+                    Id = Convert.ToInt32(dr["Reservation_Id"]),
+                    CustomerId = Convert.ToInt32(dr["Customer_Id"]),
+                    PlayId = Convert.ToInt32(dr["Play_Id"]),
+                    ReservationType = dr["Reservation_Type"].ToString(),
+                    ReservationDate = dr["Reservation_Date"].ToString()
+                };
+                if (tempUser != null)
+                {
+                    payments.Add(tempUser);
+                }
+            }
+            this.dataGridView1.DataSource = payments;
+            oleDbConnection.Close();
+        }
     }
 }

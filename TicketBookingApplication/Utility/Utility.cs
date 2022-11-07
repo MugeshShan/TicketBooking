@@ -14,6 +14,8 @@ namespace TicketBookingApplication.Utility
         public static Crew Crew = new Crew();
         public static Play Play = new Play();
         public static string ClickedButton = "";
-
+        public static string Section = "";
+        public static int Amount = 0;
+        public static int No_of_Seats = 0;
     }
 }

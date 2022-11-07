@@ -64,17 +64,14 @@ namespace TicketBookingApplication
             var command = String.Format("Insert INTO [Ticket] ([Ticket_No], [Price], [Seat_Id]) VALUES ({0}, {1}, {2})", textBox1.Text, price * Convert.ToInt32(this.textBox1.Text), seatId);
             OleDbCommand command2 = new OleDbCommand(command, oleDbConnection);
             command2.ExecuteNonQuery();
+            Utility.Utility.Section = this.comboBox1.Text;
+            Utility.Utility.No_of_Seats = Convert.ToInt32(this.textBox1.Text);
+            Utility.Utility.Amount = price;
             command = String.Format("Insert INTO [Payment] ([Amount], [Payment_Type], [Customer_Id], [Payment_Date]) VALUES ({0}, '{1}', {2}, '{3}')", price * Convert.ToInt32(this.textBox1.Text), "Card", Utility.Utility.Customer.Id, DateTime.Now.ToString("MM/dd/yyyy"));
             command2 = new OleDbCommand(command, oleDbConnection);
             command2.ExecuteNonQuery();
-            command = String.Format("Insert INTO [Transaction] ([Transaction_Status], [Customer_Id], [Transaction_Date]) VALUES ('{0}', {1}, '{2}')", "Success", Utility.Utility.Customer.Id, DateTime.Now.ToString("MM/dd/yyyy"));
-            command2 = new OleDbCommand(command, oleDbConnection);
-            command2.ExecuteNonQuery();
-            command = String.Format("Insert INTO [Reservation] ([Reservation_Date], [Play_Id], [Reservation_Type], [Customer_Id]) VALUES ('{0}', {1}, '{2}', {3})", DateTime.Now.ToString("MM/dd/yyyy"), Utility.Utility.Play.Id, "Online", Utility.Utility.Customer.Id);
-            command2 = new OleDbCommand(command, oleDbConnection);
-            command2.ExecuteNonQuery();
-            BookingPage bookingPage = new BookingPage();
-            bookingPage.Show();
+            PaymentPage page = new PaymentPage();
+            page.Show();
             this.Close();
         }
 
