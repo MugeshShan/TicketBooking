@@ -50,7 +50,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 10F);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.button1.Location = new System.Drawing.Point(369, 642);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 37);
@@ -62,10 +62,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial", 9F);
+            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.radioButton2.Location = new System.Drawing.Point(505, 388);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(94, 25);
+            this.radioButton2.Size = new System.Drawing.Size(86, 24);
             this.radioButton2.TabIndex = 32;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
@@ -74,10 +74,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial", 9F);
+            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.radioButton1.Location = new System.Drawing.Point(369, 388);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(74, 25);
+            this.radioButton1.Size = new System.Drawing.Size(70, 24);
             this.radioButton1.TabIndex = 31;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
@@ -115,10 +115,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 10F);
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label7.Location = new System.Drawing.Point(216, 336);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 23);
+            this.label7.Size = new System.Drawing.Size(49, 22);
             this.label7.TabIndex = 24;
             this.label7.Text = "State";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -126,50 +126,50 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 10F);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label6.Location = new System.Drawing.Point(216, 509);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 23);
+            this.label6.Size = new System.Drawing.Size(88, 22);
             this.label6.TabIndex = 23;
             this.label6.Text = "Password";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 10F);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label5.Location = new System.Drawing.Point(212, 442);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 23);
+            this.label5.Size = new System.Drawing.Size(93, 22);
             this.label5.TabIndex = 22;
             this.label5.Text = "UserName";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 10F);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label3.Location = new System.Drawing.Point(216, 251);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 23);
+            this.label3.Size = new System.Drawing.Size(57, 22);
             this.label3.TabIndex = 20;
             this.label3.Text = "Email";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 10F);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label2.Location = new System.Drawing.Point(217, 173);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 23);
+            this.label2.Size = new System.Drawing.Size(94, 22);
             this.label2.TabIndex = 19;
             this.label2.Text = "Last Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 20F);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(277, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 45);
+            this.label1.Size = new System.Drawing.Size(279, 45);
             this.label1.TabIndex = 18;
             this.label1.Text = "Ticket Booking";
             // 
@@ -184,10 +184,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 10F);
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label8.Location = new System.Drawing.Point(217, 97);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 23);
+            this.label8.Size = new System.Drawing.Size(98, 22);
             this.label8.TabIndex = 35;
             this.label8.Text = "First Name";
             // 
@@ -204,10 +204,10 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Font = new System.Drawing.Font("Arial", 9F);
+            this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.checkBox1.Location = new System.Drawing.Point(369, 562);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 25);
+            this.checkBox1.Size = new System.Drawing.Size(105, 24);
             this.checkBox1.TabIndex = 39;
             this.checkBox1.Text = "Customer";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -216,10 +216,10 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Arial", 9F);
+            this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.checkBox2.Location = new System.Drawing.Point(488, 562);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(115, 25);
+            this.checkBox2.Size = new System.Drawing.Size(107, 24);
             this.checkBox2.TabIndex = 40;
             this.checkBox2.Text = "Employee";
             this.checkBox2.UseVisualStyleBackColor = true;

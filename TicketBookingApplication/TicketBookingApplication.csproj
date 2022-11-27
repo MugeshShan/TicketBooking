@@ -53,6 +53,12 @@
     <Compile Include="BookingPage.Designer.cs">
       <DependentUpon>BookingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerPage.Designer.cs">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Play.cs" />
     <Compile Include="Models\Reservation.cs" />
+    <Compile Include="MyBookingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyBookingPage.Designer.cs">
+      <DependentUpon>MyBookingPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaymentPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,9 @@
     <EmbeddedResource Include="BookingPage.resx">
       <DependentUpon>BookingPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerPage.resx">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeePage.resx">
       <DependentUpon>EmployeePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBookingPage.resx">
+      <DependentUpon>MyBookingPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentPage.resx">
       <DependentUpon>PaymentPage.cs</DependentUpon>

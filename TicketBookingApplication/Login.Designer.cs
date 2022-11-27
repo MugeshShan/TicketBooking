@@ -41,10 +41,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial", 9F);
+            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.radioButton2.Location = new System.Drawing.Point(481, 297);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(114, 25);
+            this.radioButton2.Size = new System.Drawing.Size(106, 24);
             this.radioButton2.TabIndex = 16;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Employee";
@@ -53,10 +53,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial", 9F);
+            this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.radioButton1.Location = new System.Drawing.Point(353, 297);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(112, 25);
+            this.radioButton1.Size = new System.Drawing.Size(104, 24);
             this.radioButton1.TabIndex = 15;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Customer";
@@ -64,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 10F);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.button1.Location = new System.Drawing.Point(353, 366);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 36);
@@ -91,30 +91,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 10F);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label3.Location = new System.Drawing.Point(194, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 23);
+            this.label3.Size = new System.Drawing.Size(88, 22);
             this.label3.TabIndex = 11;
             this.label3.Text = "Password";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 10F);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.label2.Location = new System.Drawing.Point(194, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 23);
+            this.label2.Size = new System.Drawing.Size(93, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "UserName";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 20F);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(283, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 45);
+            this.label1.Size = new System.Drawing.Size(279, 45);
             this.label1.TabIndex = 9;
             this.label1.Text = "Ticket Booking";
             // 

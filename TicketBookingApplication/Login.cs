@@ -62,7 +62,7 @@ namespace TicketBookingApplication
                     {
                         Utility.Utility.Customer = customer;
                         MessageBox.Show("Welcome " + customer.FirstName + " !!!");
-                        BookingPage bookingPage = new BookingPage();
+                        CustomerPage bookingPage = new CustomerPage();
                         bookingPage.Show();
                         this.Close();
                     }
