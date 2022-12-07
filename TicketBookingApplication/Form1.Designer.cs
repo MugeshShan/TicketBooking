@@ -60,11 +60,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(102, 96);
+            this.label1.Location = new System.Drawing.Point(157, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(602, 45);
+            this.label1.Size = new System.Drawing.Size(476, 45);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Welcome to Movie Ticket Booking";
+            this.label1.Text = "Welcome to Spark Theatre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
